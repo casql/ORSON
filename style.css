@@ -1,0 +1,96 @@
+/*
+Theme Name: ORSON
+Theme URI: http://orson.ufpel.edu.br
+Author: O time da ORSON
+Author URI: https://wordpress.org/
+Description: Orson.
+Version: 1.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: twentyfifteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+div {
+  display: block;
+  padding: .5rem .5rem 0;
+}
+
+article {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: .25rem;
+  text-transform: capitalize !important;
+}
+
+p {
+  display: block;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+blockquote {
+  padding-left: 4em;
+  font-style: italic;
+}
+
+img {
+  margin:0;
+  padding: 0;
+  display: block;
+}
+
+.wp-caption {
+  background: rgba(0,0,0,0.1);
+  margin-bottom: 1em;
+}
+
+.wp-caption > img {
+  max-height: 500px;
+  width: auto;
+}
+
+.wp-caption-text {
+  display: block;
+  padding: 1em;
+  margin-bottom: 0;
+}
+
+
+.footnote-number{
+  padding: .5em .75em;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: rgba(0,132,255,1);
+}
+
+.easy-footnote {
+  color: #ffffff;
+  background-color: rgba(0,132,255,1);
+  display: none;
+}
+
+.footnote-number:hover + .easy-footnote {
+  display: block;
+}

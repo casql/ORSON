@@ -1,0 +1,81 @@
+/* ----------
+    RESET
+------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+body,div,nav,header,footer {display: block;}
+
+body {
+  font: normal normal 16px/1.5 sans-serif;
+}
+
+.navbar {
+  background:lightgreen;
+  overflow:hidden;
+  padding:1em;
+}
+.navbar .logo {float:left; color:#ffffff; font-weight: 700;}
+.navbar nav {float:right}
+.navbar nav ul li {list-style-type: none; display: inline; margin-left:1em;vertical-align: middle;}
+
+.navbar::before{
+  content:'';
+  display: block;
+  width:100%;
+  padding:1rem;
+  margin:-1rem -1rem 1rem;
+  text-align: center;
+  color: #ffffff;
+  background:#333333;
+  font-size: .8em;
+}
+
+.row {
+  display: block;
+  padding: 1em;
+}
+
+article header {padding-bottom:1em;margin-bottom:1em;border-bottom: 1px solid #333333}
+article img {width:auto;max-width:100%;}
+
+/* Responsive Queries - do menor ao maior */
+
+/* Celulares Retrato */
+@media screen {
+  .navbar::before{
+    content: 'Deixe-me adivinhar: você está visualizando este conteúdo em um Celular (retrato)?'
+  }
+}
+
+/* Celulares Paisagem */
+@media screen and (min-width:400px) {
+  .navbar::before{
+    content: 'Deixe-me adivinhar: você está visualizando este conteúdo em um Celular (paisagem)?'
+  }
+}
+
+@media screen and (min-width:601px) {
+  .navbar::before{
+    content: 'Deixe-me adivinhar: você está visualizando este conteúdo em um Tablet (retrato)?';
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .navbar::before{
+    content: 'Deixe-me adivinhar: você está visualizando este conteúdo em um Tablet (paisagem)?';
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .navbar::before{
+    content: 'Deixe-me adivinhar: você está visualizando este conteúdo em um Desktop?';
+  }
+}
